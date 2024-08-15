@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spotify Playlist</title>
+    <link rel="stylesheet" href="wink.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div class="container">
+        <!-- Back arrow and device info -->
+        <div class="header">
+            <div class="back-arrow">
+                <span>&larr;</span>
+            </div>
+            <div class="device-info">
+                <span>1 device</span>
+            </div>
+        </div>
+
+        <!-- Search and Sort bar -->
+        <div class="search-sort-container">
+            <input type="text" placeholder="Find in playlist">
+            <button>Sort</button>
+        </div>
+
+        <!-- Playlist Cover Image -->
+        <div class="playlist-image">
+            <!-- Image goes here -->
+             <img src="black.jpeg" alt="" width="210px">
+        </div>
+
+        <!-- Playlist Information -->
+        <div class="playlist-info">
+            <h1>KNIFE EDGE</h1>
+            <p>these are so good!</p>
+        </div>
+
+        <!-- User Info -->
+        <div class="user-info">
+            <i class="fa-solid fa-person-snowboarding"></i>
+            <span id="yuvan">Yuvan + 1 other</span>
+        </div>
+
+        <div class="controls">
+            <button class="control-icon"><i class="fas fa-random"></i></button>
+            <button class="control-icon"><i class="fas fa-step-backward" id="previous"></i></button>
+            <button class="play-button"><i class="fas fa-play" id="masterPlay"></i></button>
+            <button class="control-icon"><i class="fas fa-step-forward" id="next"></i></button>
+            <button class="control-icon"><i class="fas fa-heart"></i></button>
+        </div>
+
+        <!-- Add to playlist section -->
+        <div class="add-to-playlist">
+            <button>Add to this playlist</button>
+        </div>
+
+        <!-- Track List -->
+        <!-- <ul class="track-list">
+            <li>
+                <div class="track-info">
+                    <p class="title">Gimme Love</p>
+                    <p class="artist">Joji</p>
+                </div>
+            </li>
+            <li>
+                <div class="track-info">
+                    <p class="title">O'Meri Laila</p>
+                    <p class="artist">Atif Aslam</p>
+                </div>
+            </li>
+          
+        </ul> -->
+
+        <ul class="track-list">
+
+      <div class="yet" id="0">    
+          <li>
+        <img src="" alt="Track Cover" class="covers" id="0">
+        <div class="track-info" id="0">
+            <p class="title"  id="0">Gimme Love</p>
+            <p class="artist">The Caretaker</p>
+        </div>
+        <div class="track-options">⋮</div>
+    </li>
+  </div>
+  <div class="yet" id="1">    
+    <li>
+  <img src="" alt="Track Cover" class="covers" id="1">
+  <div class="track-info" id="1">
+      <p class="title"  id="1">Gimme Love</p>
+      <p class="artist">Cig After</p>
+  </div>
+  <div class="track-options">⋮</div>
+</li>
+</div>
+<div class="yet" id="2">    
+    <li>
+  <img src="" alt="Track Cover" class="covers" id="2">
+  <div class="track-info" id="2">
+      <p class="title"  id="2">Cig After</p>
+      <p class="artist">Cig After</p>
+  </div>
+  <div class="track-options">⋮</div>
+</li>
+</div>
+<div class="yet" id="3">    
+    <li>
+  <img src="" alt="Track Cover" class="covers" id="3">
+  <div class="track-info" id="3">
+      <p class="title"  id="3">Gimme Love</p>
+      <p class="artist">Cig After</p>
+  </div>
+  <div class="track-options">⋮</div>
+</li>
+</div>
+<div class="yet" id="4">    
+    <li>
+  <img src="" alt="Track Cover" class="covers" id="4">
+  <div class="track-info" id="4">
+      <p class="title"  id="4">Gimme Love</p>
+      <p class="artist">Ryan Gosling</p>
+  </div>
+  <div class="track-options">⋮</div>
+</li>
+</div>
+<div class="yet" id="5">    
+    <li>
+  <img src="" alt="Track Cover" class="covers" id="5">
+  <div class="track-info" id="5">
+      <p class="title"  id="5">Gimme Love</p>
+      <p class="artist">Camila Cabello</p>
+  </div>
+  <div class="track-options">⋮</div>
+</li>
+</div>
+<div class="yet" id="6">    
+    <li>
+  <img src="" alt="Track Cover" class="covers" id="6">
+  <div class="track-info" id="6">
+      <p class="title"  id="6">Gimme Love</p>
+      <p class="artist">Ryan Gosling</p>
+  </div>
+  <div class="track-options">⋮</div>
+</li>
+</div>
+<div class="yet" id="7">    
+    <li>
+  <img src="" alt="Track Cover" class="covers" id="7">
+  <div class="track-info" id="7">
+      <p class="title"  id="7">Gimme Love</p>
+      <p class="artist">Emma Stone</p>
+  </div>
+  <div class="track-options">⋮</div>
+</li>
+</div>
+<div class="yet" id="8">    
+    <li>
+  <img src="" alt="Track Cover" class="covers" id="8">
+  <div class="track-info" id="8">
+      <p class="title"  id="8">Gimme Love</p>
+      <p class="artist">Olivia Rodrigo</p>
+  </div>
+  <div class="track-options">⋮</div>
+</li>
+</div>
+<div class="yet" id="9">    
+    <li>
+  <img src="" alt="Track Cover" class="covers" id="9">
+  <div class="track-info" id="9">
+      <p class="title"  id="9">Gimme Love</p>
+      <p class="artist">Radiohead</p>
+  </div>
+  <div class="track-options">⋮</div>
+</li>
+</div>
+
+
+        </ul>
+    </div> 
+
+        <!-- Bottom Navigation Bar -->
+        <div class="progressBar">
+            <div class="img" ><img src="image.jpeg"  id="vertical_bar"></div>
+            <div class="myProgressBar" id="myProgressBar">Just Like her</div>
+            <div class="icat">
+                <span><i class="fa-solid fa-headphones" id="headphone"></i></span>
+            </div>
+            <div class="icat">
+                <span><i class="fa-solid fa-heart" id="heart"></i></span></span>
+            </div>
+            <div class="icat">
+                <span><i class="fa-solid fa-play" id="mastPlay"></i></span></span>
+            </div>
+        </div>
+
+
+
+
+        <div class="bottomBar">
+            <div class="nav-item">
+                <span><i class="fa-solid fa-house" id="house"></i><div class="text">Home</div> </span></span>
+            </div>
+            <div class="nav-item">
+                <span><i class="fa-solid fa-magnifying-glass" id="search"></i><div class="text">Search</div></span>
+            </div>
+            <div class="nav-item">
+                <span><i class="fa-solid fa-bars" id="library"></i><div class="text">Library</div></span>
+            </div>
+        </div>
+    </div>
+    <script src="wynk.js"></script>
+</body>
+</html>
+<!-- fa-solid fa-pause -->
